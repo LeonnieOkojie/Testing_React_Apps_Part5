@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/679aa27138b041f48ccb8310
+Content-Type: application/json
+
+{
+    "title": "How to run tests one by one",
+    "author": "Adams Peterson",
+    "url": "https://www.medium.com",
+    "likes": 107
+}
