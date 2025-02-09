@@ -24,17 +24,25 @@ The backend application is organized as follows:
 
 ```
 backend-project/
-│── src/
-│   ├── controllers/    # Business logic for handling requests
-│   ├── models/         # Database models and schemas
-│   ├── routes/         # API route definitions
-│   ├── middleware/     # Authentication, logging, and other middleware
-│   ├── tests/          # Unit and integration tests
-│   ├── config/         # Configuration files
-│   ├── utils/          # Utility functions and helpers
-│   ├── app.js         # Application entry point
-│── .env               # Environment variables
-│── package.json       # Dependencies and scripts
+├── index.js             # Main entry point of the application
+├── app.js               # Express application setup
+├── dist/                # Compiled output (if applicable)
+│   └── ...
+├── controllers/         # Controllers for handling business logic
+│   ├── blogs.js         # Blog-related logic
+│   ├── login.js         # Login authentication logic
+│   ├── user.js          # User-related logic
+├── tests/               # Unit and integration tests
+│   └── ...
+├── models/              # Database models and schemas
+│   ├── blog.js          # Blog schema/model
+│   ├── user.js          # User schema/model
+├── package-lock.json    # Lock file for package versions
+├── package.json         # Dependencies and scripts
+├── utils/               # Utility functions and middleware
+│   ├── config.js        # Configuration settings
+│   ├── logger.js        # Logging utility
+│   └── middleware.js    # Middleware functions
 │── README.md          # Documentation
 ```
 
@@ -93,29 +101,29 @@ Token-based authentication ensures secure API access. This project uses **JWT (J
 
 ### Prerequisites
 
-- **Node.js** (>= 14.x)  
-- **npm** or **yarn**  
-- **MongoDB/PostgreSQL** (depending on the database used)  
+- **Node.js** (>= 20.x)  
+- **npm**  
+- **MongoDB Atlas** (or depending on the database used)  
 
 ### Setup Instructions
 
 1. **Clone the repository**:
 
    ```sh
-      git clone https://github.com/yourusername/backend-project.git
+      git clone https://github.com/LeonnieOkojie/FullStack_Testing_Express_Server_Part4.git
          ```
 
          2.Install dependencies:
 
             ```sh
-               cd backend-project
+               cd FullStack_Testing_Express_Server_Part4
                   npm install
                      ```
 
                      3. Configure environment variables in a `.env` file:
 
                         ```sh
-                           PORT=5000
+                           PORT=3003
                               DB_URI=mongodb://localhost:27017/mydatabase
                                  JWT_SECRET=your_secret_key
                                     ```
