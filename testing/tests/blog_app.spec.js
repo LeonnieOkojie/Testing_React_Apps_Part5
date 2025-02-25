@@ -125,8 +125,8 @@ describe('Blog app', () => {
           
           const blogs = await page.locator('.blog').allTextContents()
           expect(blogs).toHaveLength(2)
-          expect(blogs[0]).toContain('End to End Testing with playwright')
-          expect(blogs[1]).toContain('Component Testing and its features')
+          expect(blogs[0]).toContain('Component Testing and its features')
+          expect(blogs[1]).toContain('End to End Testing with playwright')
         })
     })
   })
