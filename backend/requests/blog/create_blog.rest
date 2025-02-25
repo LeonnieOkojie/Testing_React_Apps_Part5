@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFsaWNlIiwiaWQiOiI2N2JkODI5YTQ4YzNiM2NiM2ZlODU5MjIiLCJpYXQiOjE3NDA0NzMwNjUsImV4cCI6MTc0MDQ3NjY2NX0.kHAqk5TbVrmWpTdFV6LAP75FrTF4VxQ-iaIyAvR_SlU
+
+{
+    "title": "End to End Testing with Playwright",
+    "author": "Henry Hart",
+    "url": "https://www.playwright.com",
+    "user": "67bd81d448c3b3cb3fe85903"
+}
